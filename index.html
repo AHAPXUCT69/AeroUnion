@@ -9,52 +9,72 @@
     <title>AeroUnion - Официальный диллер</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <span class="logo__name logo__name--hl">Aero<span class="logo__name">union</span><span>
-        <span class="logo__description">Официальный диллер в РФ</span>
-      </div>
-      <!-- /.logo -->
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link link">Модели</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link link">Обзор вертолетов</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link link">О компании</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link link">Преимущества</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link link">Калькулятор</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link link">Услуги</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link link">Новости</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="layout">
+      <div class="sidebar"></div>
+      <!-- /.sidebar -->
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="header-inner">
+              <a href="#" class="logo link">
+                <span class="logo__name logo__name--hl"
+                  >Aero<span class="logo__name">union</span></span
+                >
+                <span class="logo__description">Официальный диллер в РФ</span>
+              </a>
+              <!-- /.logo -->
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link link">Модели</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link link">Обзор вертолетов</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link link">О компании</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link link">Преимущества</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link link">Калькулятор</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link link">Услуги</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link link">Новости</a>
+                  </li>
+                </ul>
+              </nav>
 
-      <div class="options">
-        <div class="lang">
-          <a href="#" class="lang__eng link">eng</a>
-          <a href="#" class="lang__rus lang__rus--active link">rus</a>
-        </div>
-        <!-- /.options__lang -->
-        <a href="#" class="optons__compare link"
-          ><img src="images/" alt="Сравнение"
-        /></a>
-        <a href="#" class="optons__search link"
-          ><img src="images/" alt="Сравнение"
-        /></a>
+              <div class="options">
+                <div class="lang">
+                  <a href="#" class="lang__eng link">eng</a>
+                  <a href="#" class="lang__rus active link">rus</a>
+                </div>
+                <!-- /.options__lang -->
+                <a href="#" class="optons__compare link">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#comparison"></use>
+                  </svg>
+                </a>
+                <a href="#" class="optons__search link">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- /.options -->
+            </div>
+            <!-- /.header-wrapper -->
+          </div>
+          <!-- /.container -->
+        </header>
       </div>
-      <!-- /.options -->
-    </header>
+      <!-- /.content -->
+    </div>
+    <!-- /.layout -->
   </body>
 </html>
