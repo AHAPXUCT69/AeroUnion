@@ -144,11 +144,11 @@
             <div class="options">
               <div class="lang">
                 <a href="#" class="lang__eng link">eng</a>
-                <a href="#" class="lang__rus active link">rus</a>
+                <a href="#" class="lang__rus lang--active link">rus</a>
               </div>
               <!-- /.options__lang -->
               <a href="#" class="optons__compare link">
-                <svg class="icon">
+                <svg class="icon icon__comparison">
                   <use xlink:href="images/icons/sprite.svg#comparison"></use>
                 </svg>
               </a>
@@ -180,7 +180,7 @@
                   январе 2021 года
                 </p>
                 <button
-                  class="offer__button button"
+                  class="offer__button button button--dark"
                   type="button"
                   data-toggle="modal"
                 >
@@ -217,11 +217,92 @@
           <!-- /.container -->
         </div>
         <!-- /.first-page -->
+
         <div class="second-page page section">
-          <div class="container"></div>
+          <div class="container">
+            <div class="models">
+              <div class="models-slider">
+                <div class="models-slider__slide">
+                  <div class="model">
+                    <div class="model__wrapper">
+                      <div class="model__top">
+                        <h2 class="model__name">Robinson R44</h2>
+                        <button class="model__compare button" type="button">
+                          <svg class="icon icon__comparison">
+                            <use
+                              xlink:href="images/icons/sprite.svg#comparison"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <!-- /.model__top -->
+                      <img
+                        class="model__image"
+                        src="images/models/R44.png"
+                        alt="Вертолет R44"
+                      />
+                    </div>
+                    <!-- /.model__wrapper -->
+
+                    <div class="model__wrapper">
+                      <div class="model__info">
+                        <div class="model__parameter">
+                          <svg class="model__icon icon">
+                            <use
+                              xlink:href="images/icons/sprite.svg#speed"
+                            ></use>
+                          </svg>
+                          <span class="model__text">240 км/ч</span>
+                        </div>
+                        <div class="model__parameter">
+                          <svg class="model__icon icon">
+                            <use
+                              xlink:href="images/icons/sprite.svg#seats"
+                            ></use>
+                          </svg>
+                          <span class="model__text">3+1 пасс</span>
+                        </div>
+                        <div class="model__parameter">
+                          <svg class="model__icon icon">
+                            <use
+                              xlink:href="images/icons/sprite.svg#track"
+                            ></use>
+                          </svg>
+                          <span class="model__text">650 км</span>
+                        </div>
+                        <a href="#" class="model__more link link--white"
+                          >Подробнее</a
+                        >
+                      </div>
+                      <!-- /.models-slider__info -->
+                    </div>
+                    <!-- /.model__wrapper -->
+                  </div>
+                  <!-- /.model -->
+                </div>
+                <!-- /.models-slider__slide -->
+              </div>
+              <!-- /.models-slider -->
+
+              <div class="models-offer">
+                <h2 class="models-offer__header"></h2>
+                <p class="models-offer__description"></p>
+                <div class="models-offer__buttons">
+                  <button
+                    class="models-offer__button button button--light"
+                  ></button>
+                  <a class="models-offer__button button button--dark"></a>
+                </div>
+                <!-- /.models-offer__buttons -->
+              </div>
+              <!-- /.models-offer -->
+            </div>
+            <!-- /.models -->
+          </div>
           <!-- /.container -->
         </div>
         <!-- /.second-page -->
+
         <div class="second section"></div>
         <!-- /.second section -->
         <div class="third section"></div>
@@ -268,7 +349,7 @@
             minlength="17"
             maxlength="17"
           />
-          <button class="modal__button button" type="submit">
+          <button class="modal__button button button--light" type="submit">
             Оставить заявку
           </button>
           <p class="modal__description">
