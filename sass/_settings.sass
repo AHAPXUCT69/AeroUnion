@@ -1,15 +1,38 @@
 *
   box-sizing: border-box
+  transition: all 0.3s
+
+body
+  overflow-x: hidden
 
 .layout
-  display: flex
-  justify-content: flex-start
-  align-items: flex-start
-  background-color: rgba(31, 31, 31, 1)
+  // display: flex
+  // justify-content: flex-start
+  // align-items: flex-start
+  // z-index: 3
+  // background-image: url(../images/offer-bg.jpg)
+  // background-repeat: no-repeat
+  // background-size: cover
+  // background-position: right center
 
 .content
+  position: relative
   width: 100%
   height: 100vh
+  margin-left: 81px
+
+.page
+  background-color: #000000
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(112.21deg, rgba(31, 31, 31, 0.91) 2.72%, rgba(18, 18, 18, 0.91) 101.59%)
 
 .container
   width: 1679px
@@ -20,6 +43,9 @@
   transition: color 0.2s
   &:hover
     color: #FFFFFF
+  &--white
+    &:hover
+      color: rgba(255, 255, 255, 0.4)
 
 .active
   color: #FFFFFF
@@ -31,3 +57,45 @@
   transition: fill 0.2s
   &:hover
     fill: rgba(255, 255, 255, 0.4)
+
+.button
+  cursor: pointer
+  border: none
+  outline: none
+
+.input
+  outline: none
+  // &:focus, &:active
+  //   outline: none
+
+.spiner
+  position: absolute
+  bottom: 55px
+  left: 50%
+  transform: translateX(-50%)
+  width: 44px
+  height: 44px
+  border: 3px solid rgba(54, 54, 54, 0.37)
+  border-radius: 50%
+  z-index: 3
+  &__semicircle
+    position: absolute
+    top: -3px
+    left: -3px
+    content: ''
+    width: 44px
+    height: 22px
+    border-radius: 44px 44px 0 0
+    border-top: 3px solid rgba(212, 212, 212, 1)
+    border-left: 3px solid rgba(212, 212, 212, 1)
+    border-right: 3px solid rgba(212, 212, 212, 1)
+    animation: rotation 2s ease infinite
+    transform-origin: 22px 22px
+.second
+  width: 100%
+  height: 100vh
+  background: red
+.third
+  width: 100%
+  height: 100vh
+  background: green

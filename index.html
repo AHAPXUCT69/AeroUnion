@@ -4,77 +4,283 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fullpage.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js" defer=""></script>
     <title>AeroUnion - Официальный диллер</title>
   </head>
   <body>
     <div class="layout">
-      <div class="sidebar"></div>
-      <!-- /.sidebar -->
-      <div class="content">
-        <header class="header">
-          <div class="container">
-            <div class="header-inner">
-              <a href="#" class="logo link">
-                <span class="logo__name logo__name--hl"
-                  >Aero<span class="logo__name">union</span></span
-                >
-                <span class="logo__description">Официальный диллер в РФ</span>
-              </a>
-              <!-- /.logo -->
-              <nav class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a href="#" class="nav__link link">Модели</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link link">Обзор вертолетов</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link link">О компании</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link link">Преимущества</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link link">Калькулятор</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link link">Услуги</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link link">Новости</a>
-                  </li>
-                </ul>
-              </nav>
+      <div class="sidebar">
+        <div class="sidebar__top">
+          <a href="#" class="logo link">
+            <span class="logo__name logo__name--hl"
+              >Aero
+              <span class="logo__name">union</span>
+            </span>
+            <span class="logo__description">Официальный диллер в РФ</span>
+          </a>
+          <!-- /.logo -->
+          <button type="button" class="burger">
+            <span></span>
+          </button>
+          <!-- /.burger -->
+        </div>
+        <!-- /.sidebar__top -->
 
-              <div class="options">
-                <div class="lang">
-                  <a href="#" class="lang__eng link">eng</a>
-                  <a href="#" class="lang__rus active link">rus</a>
-                </div>
-                <!-- /.options__lang -->
-                <a href="#" class="optons__compare link">
-                  <svg class="icon">
-                    <use xlink:href="images/icons/sprite.svg#comparison"></use>
-                  </svg>
-                </a>
-                <a href="#" class="optons__search link">
-                  <svg class="icon">
-                    <use xlink:href="images/icons/sprite.svg#search"></use>
-                  </svg>
-                </a>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list">
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white"
+                >История компании
+              </a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white"
+                >Каталог вертолетов</a
+              >
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white"
+                >Каталог запчастей</a
+              >
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white"
+                >Конфигуратор</a
+              >
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white">Новости</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white"
+                >Обслуживание</a
+              >
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white"
+                >Техническая информация</a
+              >
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link link link--white">Услуги</a>
+            </li>
+          </ul>
+        </nav>
+        <hr class="sidebar__line" />
+        <div class="sidebar-contacts">
+          <a
+            class="sidebar-contacts__item link link--white"
+            href="tel:+74957234444"
+            >+7 (495) 723-44-44</a
+          >
+          <a
+            class="sidebar-contacts__item link link--white"
+            href="tel:+79637775757"
+            >+7 (963) 777-57-57</a
+          >
+          <a
+            class="sidebar-contacts__item link link--white"
+            href="mailto:info@aerounion.msk.ru"
+            >info@aerounion.msk.ru</a
+          >
+          <span class="sidebar-contacts__item"
+            >Координаты: N56.12695 E037.0695</span
+          >
+          <span class="sidebar-contacts__item"
+            >Частота радиосвязи: 123.9 Мгц - UUCH</span
+          >
+        </div>
+        <!-- /.sidebar__contacts -->
+
+        <div class="scroll">
+          <span class="scroll__text">Листайте дальше</span>
+          <a href="#" class="scroll__link link">
+            <svg class="icon scroll__icon">
+              <use xlink:href="images/icons/sprite.svg#scroll-down"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.scroll -->
+      </div>
+      <!-- /.sidebar -->
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="#" class="logo link">
+              <span class="logo__name logo__name--hl"
+                >Aero<span class="logo__name">union</span></span
+              >
+              <span class="logo__description">Официальный диллер в РФ</span>
+            </a>
+            <!-- /.logo -->
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Модели</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Обзор вертолетов</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Преимущества</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Калькулятор</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Новости</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="options">
+              <div class="lang">
+                <a href="#" class="lang__eng link">eng</a>
+                <a href="#" class="lang__rus active link">rus</a>
               </div>
-              <!-- /.options -->
+              <!-- /.options__lang -->
+              <a href="#" class="optons__compare link">
+                <svg class="icon">
+                  <use xlink:href="images/icons/sprite.svg#comparison"></use>
+                </svg>
+              </a>
+              <a href="#" class="optons__search link">
+                <svg class="icon">
+                  <use xlink:href="images/icons/sprite.svg#search"></use>
+                </svg>
+              </a>
             </div>
-            <!-- /.header-wrapper -->
+            <!-- /.options -->
+          </div>
+          <!-- /.header-wrapper -->
+        </div>
+        <!-- /.container -->
+      </header>
+      <div class="content" id="fullpage">
+        <div class="first-page section">
+          <div class="container">
+            <div class="offer">
+              <div class="offer__info">
+                <h1 class="offer__header">
+                  <span class="offer__header offer__header--hl"
+                    >Успейте купить</span
+                  >Robinson R44, R66
+                </h1>
+                <p class="offer__description">
+                  Желающие приобрести вертолет могут оформить заказ по
+                  действующим ценам до очередного ежегодного повышения цен в
+                  январе 2021 года
+                </p>
+                <button
+                  class="offer__button button"
+                  type="button"
+                  data-toggle="modal"
+                >
+                  оформить заказ
+                </button>
+              </div>
+              <!-- /.offer__info -->
+
+              <div class="offer__offset">
+                <span></span>
+              </div>
+              <!-- /.offer__offset -->
+            </div>
+            <!-- /.offer -->
+            <div class="social">
+              <a href="#" class="social__link link">
+                <svg class="icon facebook">
+                  <use xlink:href="images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link link">
+                <svg class="icon youtube">
+                  <use xlink:href="images/icons/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link link">
+                <svg class="icon instagram">
+                  <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.social -->
           </div>
           <!-- /.container -->
-        </header>
+        </div>
+        <!-- /.first-page -->
+        <div class="second-page page section">
+          <div class="container"></div>
+          <!-- /.container -->
+        </div>
+        <!-- /.second-page -->
+        <div class="second section"></div>
+        <!-- /.second section -->
+        <div class="third section"></div>
+        <!-- /.second section -->
       </div>
       <!-- /.content -->
+      <div class="spiner spiner--visible">
+        <div class="spiner__semicircle"></div>
+        <!-- /.spiner__semicircle -->
+      </div>
+      <!-- /.spiner -->
     </div>
     <!-- /.layout -->
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+
+      <div class="modal__dialog">
+        <button class="modal__close button">
+          <span></span>
+        </button>
+        <h2 class="modal__header">Оставьте заявку прямо сейчас</h2>
+        <form
+          class="modal__form form"
+          action="send.php"
+          method="POST"
+          novalidate="novalidate"
+        >
+          <input
+            class="modal__input input"
+            type="text"
+            name="name"
+            placeholder="Имя"
+            required=""
+            minlength="2"
+          />
+          <input
+            class="modal__input input"
+            type="tel"
+            name="phone"
+            placeholder="Номер телефона"
+            required=""
+            minlength="17"
+            maxlength="17"
+          />
+          <button class="modal__button button" type="submit">
+            Оставить заявку
+          </button>
+          <p class="modal__description">
+            Оставьте заявку, мы перезвоним вам в ближайшее время и ответим на
+            все ваши вопросы
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- /.modal -->
+
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script src="js/fullpage.min.js" defer=""></script>
   </body>
 </html>
